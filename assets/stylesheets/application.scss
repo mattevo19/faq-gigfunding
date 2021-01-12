@@ -1,7 +1,57 @@
-body {
-  font-family: Helvetica;
-}
 .app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  h1 {
+    position: absolute;
+    width: 582px;
+    height: 184px;
+    left: 429px;
+    top: 125px;
+
+    font-family: Neue Kabel;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 50px;
+    /* or 104% */
+
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #242424;
+  }
+  .header {
+    position: absolute;
+    
+    font-family: Neue Kabel;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+    /* or 139% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #242424;
+  }
+  .left{
+    width: 279px;
+    height: 100px;
+    left: 100px;
+    top: 330px;
+  }
+  .middle {
+    width: 310px;
+    height: 39px;
+    left: 565px;
+    top: 360px;
+  }
+  .right {
+    width: 279px;
+    height: 105px;
+    left: 1061px;
+    top: 327px;
+  }
 }
