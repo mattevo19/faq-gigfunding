@@ -8,7 +8,7 @@ class HeaderList extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="header">
         {this.renderList()}
       </div>
     );

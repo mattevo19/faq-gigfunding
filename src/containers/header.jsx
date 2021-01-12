@@ -9,7 +9,9 @@ const Header = (props) => {
   }
   return (
     <div>
-      <h2 className={`header ${props.position}`} onClick={handleClick}>{props.title}</h2>
+      <ul>
+        <li className={`header ${props.position}`} onClick={handleClick}>{props.title}</li>
+      </ul>
     </div>
   );
 }
