@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderList from '../containers/header_list';
+import ActiveHeader from '../containers/active_header';
 import FaqList from '../containers/faq_list';
 
 const App = () => {
@@ -7,7 +8,8 @@ const App = () => {
     <div className="app">
       <h1>got a question?</h1>
       <HeaderList />
-      <FaqList />
+      <ActiveHeader />
+      {/* <FaqList /> */}
     </div>
   );
 };

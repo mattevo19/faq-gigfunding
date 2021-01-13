@@ -19,4 +19,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ selectHeader }, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(Header)
+export default connect(null,mapDispatchToProps)(Header)
