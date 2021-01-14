@@ -10,7 +10,7 @@ const Header = (props) => {
   return (
     <div>
       <ul>
-        <li className={`header ${props.position}`} onClick={handleClick}>{props.title}</li>
+        <li className="header" onClick={handleClick}>{props.title}</li>
       </ul>
     </div>
   );

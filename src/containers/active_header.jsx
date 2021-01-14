@@ -15,7 +15,7 @@ export const activeHeader = (props) => {
       <ul>
           {props.activeHeader.questions.map((question, index) => {
             return (
-              <li key={index}>{question}</li>)
+              <li className="question-list" key={index}>{question}</li>)
           })}
       </ul>
     </div>
