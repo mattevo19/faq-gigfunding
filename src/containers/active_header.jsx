@@ -12,7 +12,14 @@ export const activeHeader = (props) => {
 
   return (
     <div className="active-header">
-      <h3>{props.activeHeader.address}</h3>
+      <ul>
+        <li>
+          {props.activeHeader.questions.map((question, index) => {
+            return (
+              <li key={index}>{question}</li>)
+          })}
+        </li>
+      </ul>
     </div>
   );
 };
