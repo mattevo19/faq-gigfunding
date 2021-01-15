@@ -1,18 +1,16 @@
 import React from 'react';
+import Header from '../components/header';
 import HeaderList from '../containers/header_list';
 import ActiveFaq from '../containers/active_faq';
-
+import Bottom from '../components/footer';
 
 const App = () => {
   return (
     <div className="app">
-      <h1>got a question?</h1>
+      <Header />
       <HeaderList />
       <ActiveFaq />
-      <div>
-        <h3>What if my quesiton wasn't answered here?</h3>
-        <p>We're alwys happy to answer queries and requests. Email <strong>team@gigfunding.org</strong> and we will get back to you, and if it's a particularly brilliant question we'll add it to this very page.</p>
-      </div>
+      <Bottom />
     </div>
   );
 };

@@ -9,7 +9,7 @@ class HeaderList extends Component {
   render() {
     return (
       <div>
-        <ul className="header">
+        <ul className="headers">
           {this.renderList()}
         </ul>
       </div>
