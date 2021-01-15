@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-export const activeHeader = (props) => {
+export const activeFaq = (props) => {
   const propsDefault = {
     questions: ["What is Gigfunding?","Is Gigfunding free to use?","How does Gigfunding make money?","How is Gigfunding funded?","How does Gigfunding work?","Who is Gigfunding for?","How can I contact the team?","When was Gigfunding founded?","What’s Gigfunding impact so far?","What is Gigfunding longer term vision?","What are Gigfunding’s main priorities?","Will this take paid jobs away from small business owners?","What is Gigfunding doing to include ‘digitally excluded’ people?"],
     answers: ["Gigfunding is the change modern fundraising needs. Using our online marketplace, you can hire or volunteer skills depending on how you want to give; with the money paid for those skills going to the causes you want it to. Leaving behind passive direct debits, chugging and sponsored effing bungee jumps. Gigfunding allows you to fundraise when you want and how you want.",
@@ -20,9 +20,9 @@ export const activeHeader = (props) => {
     ]
   }
 
-  if (!props.activeHeader) {
+  if (!props.activeFaq) {
     return (
-      <div className="active-header">
+      <div className="active">
         <ul>
           {propsDefault.questions.map((question,index) => <li className="question-list" key={index}>{question}</li>)}
         </ul>
@@ -31,9 +31,9 @@ export const activeHeader = (props) => {
   }
 
   return (
-    <div className="active-header">
+    <div className="active">
       <ul>
-          {props.activeHeader.questions.map((question, index) => <li className="question-list" key={index}>{question}</li>)}
+          {props.activeFaq.questions.map((question, index) => <li className="question-list" key={index}>{question}</li>)}
       </ul>
     </div>
   );
@@ -41,8 +41,8 @@ export const activeHeader = (props) => {
 
 function mapStateToProps(state) {
   return {
-    activeHeader: state.activeHeader
+    activeFaq: state.activeFaq
   };
 }
 
-export default connect(mapStateToProps)(activeHeader);
+export default connect(mapStateToProps)(activeFaq);

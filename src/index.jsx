@@ -9,12 +9,12 @@ import { logger } from 'redux-logger';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 import HeadersReducer from './reducers/headers_reducer';
-import activeHeaderReducer from './reducers/active_header_reducer';
+import activeFaqReducer from './reducers/active_faq_reducer';
 
 // State and reducers
 const reducers = combineReducers({
   headers: HeadersReducer,
-  activeHeader: activeHeaderReducer
+  activeFaq: activeFaqReducer
 });
 
 const middlewares = applyMiddleware(logger)
