@@ -6,13 +6,13 @@ import selectHeader from '../actions/index';
 const Header = (props) => {
   const handleClick = () => {
     props.selectHeader(props.header)
-  }
+  };
   return (
     <li onClick={handleClick}>{props.header.title}</li>
   );
-}
+};
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ selectHeader }, dispatch);
-}
+};
 
-export default connect(null,mapDispatchToProps)(Header)
+export default connect(null,mapDispatchToProps)(Header);

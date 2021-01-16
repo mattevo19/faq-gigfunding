@@ -17,7 +17,7 @@ const reducers = combineReducers({
   activeFaq: activeFaqReducer
 });
 
-const middlewares = applyMiddleware(logger)
+const middlewares = applyMiddleware(logger);
 
 // render an instance of the component in the DOM
 ReactDOM.render(

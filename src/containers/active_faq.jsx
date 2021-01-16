@@ -60,7 +60,7 @@ export const activeFaq = (props) => {
       //   "answer": "This is something we have had on our minds since day one. Gigfunding is all about inclusivity and community, enabling everyone to connect and give in the way they want to and are able to. At this stage, the only way we can currently enable digitally excluded people to use the site is through a buddy system."
       // }
     ]
-  }
+  };
 
   if (!props.activeFaq) {
     return (
@@ -70,7 +70,7 @@ export const activeFaq = (props) => {
         </ul>
       </div>
     );
-  }
+  };
 
   return (
     <div className="active">
@@ -85,6 +85,6 @@ function mapStateToProps(state) {
   return {
     activeFaq: state.activeFaq
   };
-}
+};
 
 export default connect(mapStateToProps)(activeFaq);

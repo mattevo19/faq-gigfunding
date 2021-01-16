@@ -4,4 +4,4 @@ export default function selectHeader(header) {
     type: 'HEADER_SELECTED',
     payload: header
   };
-}
+};

@@ -5,7 +5,7 @@ function Header() {
     <header>
       got a question?
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

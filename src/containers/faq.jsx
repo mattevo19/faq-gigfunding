@@ -13,7 +13,7 @@ const Faq = ({ faq }) => {
         {faq.answer}
       </div>
     </li>
-  )
-}
+  );
+};
 
 export default Faq;

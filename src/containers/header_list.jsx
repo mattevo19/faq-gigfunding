@@ -14,12 +14,12 @@ class HeaderList extends Component {
         </ul>
       </div>
     );
-  }
-}
+  };
+};
 function mapDispatchToProps(state) {
   return {
     headers: state.headers
-  }
-}
+  };
+};
 
-export default connect(mapDispatchToProps)(HeaderList)
+export default connect(mapDispatchToProps)(HeaderList);
