@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Faq from '../containers/faq';
 
 export const activeFaq = (props) => {
   const propsDefault = {
@@ -64,7 +65,7 @@ export const activeFaq = (props) => {
     return (
       <div className="active">
         <ul>
-          {propsDefault.faqs.map((faq,index) => <li className="question-list" key={index}>{faq.question} {faq.answer}</li>)}
+          {propsDefault.faqs.map((faq, index) => <Faq faq={faq} key={index} />)}
         </ul>
       </div>
     );
@@ -73,7 +74,7 @@ export const activeFaq = (props) => {
   return (
     <div className="active">
       <ul>
-          {props.activeFaq.faqs.map((faq, index) => <li className="question-list" key={index}>{faq.question} {faq.answer}</li>)}
+          {props.activeFaq.faqs.map((faq, index) => <Faq faq={faq} key={index} />)}
       </ul>
     </div>
   );

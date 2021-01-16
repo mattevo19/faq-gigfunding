@@ -8,7 +8,7 @@ const Header = (props) => {
     props.selectHeader(props.header)
   }
   return (
-    <li className="header" onClick={handleClick}>{props.title}</li>
+    <li className="header" onClick={handleClick}>{props.header.title}</li>
   );
 }
 function mapDispatchToProps(dispatch) {

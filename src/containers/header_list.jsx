@@ -4,7 +4,7 @@ import Header from '../containers/header';
 
 class HeaderList extends Component {
   renderList() {
-    return this.props.headers.map((header, index) => <Header header={header} title={header.title} key={index} />)
+    return this.props.headers.map((header, index) => <Header header={header} key={index} />)
   }
   render() {
     return (
