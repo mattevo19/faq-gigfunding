@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 
 const Faq = ({ faq }) => {
   return (
-    <li className="question-list">
+    <li className={"question-list " + (faq.open ? 'open' : '')}>
       <div className="faq-question">
         {faq.question}
       </div>

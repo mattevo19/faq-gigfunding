@@ -7,7 +7,8 @@ export const activeFaq = (props) => {
     "faqs": [
       { 
         "question": "What is Gigfunding?",
-        "answer": "Gigfunding is the change modern fundraising needs. Using our online marketplace, you can hire or volunteer skills depending on how you want to give; with the money paid for those skills going to the causes you want it to. Leaving behind passive direct debits, chugging and sponsored effing bungee jumps. Gigfunding allows you to fundraise when you want and how you want."
+        "answer": "Gigfunding is the change modern fundraising needs. Using our online marketplace, you can hire or volunteer skills depending on how you want to give; with the money paid for those skills going to the causes you want it to. Leaving behind passive direct debits, chugging and sponsored effing bungee jumps. Gigfunding allows you to fundraise when you want and how you want.",
+        "open": true
       },
       // {
       //   "question": "Is Gigfunding free to use?",
