@@ -4,14 +4,3 @@ export default function toggleFaq(faq) {
     payload: faq
   };
 }
-
-// export function toggleFAQ(index) {
-//   faq.map((faq, i) => {
-//     if (i === index) {
-//       faq.open = !faq.open
-//     } else {
-//       faq.open = false;
-//     }
-//     return faq;
-//   })
-// }

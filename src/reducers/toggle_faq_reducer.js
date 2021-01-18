@@ -1,17 +1,12 @@
 export default function(state = null, action) {
   switch (action.type) {
     case 'TOGGLE_FAQ':
-      // return state.map((faq, i) => {
-      //   if (i === action.index) {
-      //     faq.open = !faq.open
-      //   }
-      //   return faq;
-      // })
+      action.payload.open = !action.payload.open;
+      return action.payload;
     default:
       return state;
-  };
-};
-
+  }
+}
 
 // export function toggleFAQ(index) {
 //   faq.map((faq, i) => {
