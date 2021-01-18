@@ -5,14 +5,14 @@ import selectHeader from '../actions/index';
 
 const Header = (props) => {
   const handleClick = () => {
-    props.selectHeader(props.header)
-  }
+    props.selectHeader(props.header);
+  };
   return (
-    <li className="header" onClick={handleClick}>{props.title}</li>
+    <li className="header" onClick={handleClick} role="presentation">{props.title}</li>
   );
-}
+};
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ selectHeader }, dispatch);
 }
 
-export default connect(null,mapDispatchToProps)(Header)
+export default connect(null, mapDispatchToProps)(Header);

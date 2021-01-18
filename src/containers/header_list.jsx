@@ -4,7 +4,7 @@ import Header from '../containers/header';
 
 class HeaderList extends Component {
   renderList() {
-    return this.props.headers.map((header, index) => <Header header={header} title={header.title} key={index} />)
+    return this.props.headers.map(header => <Header header={header} title={header.title} key={header.title} />);
   }
   render() {
     return (
@@ -19,7 +19,7 @@ class HeaderList extends Component {
 function mapDispatchToProps(state) {
   return {
     headers: state.headers
-  }
+  };
 }
 
-export default connect(mapDispatchToProps)(HeaderList)
+export default connect(mapDispatchToProps)(HeaderList);
