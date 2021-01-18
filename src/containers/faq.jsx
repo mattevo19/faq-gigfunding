@@ -1,11 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-
+import toggleFaq from '../actions/toggle_faq';
 
 const Faq = (props) => {
   const handleClick = () => {
-    props.selectFaq(props.faq.open)
+    // props.selectFaq(props.faq.open)
+    props.toggleFaq(props.faq)
   };
 
   return (
@@ -23,4 +24,8 @@ const Faq = (props) => {
   );
 };
 
-export default Faq;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ toggleFaq }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(Faq);
