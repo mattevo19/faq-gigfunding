@@ -8,15 +8,13 @@ import { logger } from 'redux-logger';
 // internal modules
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
-import HeadersReducer from './reducers/headers_reducer';
-import activeFaqReducer from './reducers/active_faq_reducer';
-import toggleFaqReducer from './reducers/toggle_faq_reducer';
+import headersReducer from './reducers/headers_reducer';
+import faqReducer from './reducers/faqs_reducer';
 
 // State and reducers
 const reducers = combineReducers({
-  headers: HeadersReducer,
-  activeFaq: activeFaqReducer,
-  toggleFaq: toggleFaqReducer
+  selectedHeaders: headersReducer,
+  faqs: faqReducer
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

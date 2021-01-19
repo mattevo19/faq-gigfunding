@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import selectHeader from '../actions/index';
 
 const Header = (props) => {
@@ -9,11 +8,8 @@ const Header = (props) => {
   };
   return (
     // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-    <li onClick={handleClick}>{props.header.title}</li>
+    <li onClick={handleClick}>{props.header}</li>
   );
 };
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectHeader }, dispatch);
-}
 
-export default connect(null, mapDispatchToProps)(Header);
+export default connect(null, { selectHeader })(Header);

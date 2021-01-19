@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Header from '../containers/header';
+import { getAllHeaders } from '../selectors'
 
-class HeaderList extends Component {
-  renderList() {
-    return this.props.headers.map(header => <Header header={header} key={header.title} />);
-  }
-  render() {
-    return (
-      <div>
-        <ul className="headers">
-          {this.renderList()}
-        </ul>
-      </div>
-    );
-  }
+const HeaderList = props => {
+
+  const headers = props.headers.map((header, i) => <Header header={header} key={i} />);
+
+  return (
+    <div>
+      <ul className="headers">
+        {headers}
+      </ul>
+    </div>
+  );
 }
+
 function mapDispatchToProps(state) {
   return {
-    headers: state.headers
+    headers: getAllHeaders(state)
   };
 }
 
