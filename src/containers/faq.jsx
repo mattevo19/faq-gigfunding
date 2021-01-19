@@ -7,7 +7,7 @@ const Faq = (props) => {
     props.toggleFaq(props.faq);
   };
 
-  const openClass = props.faq.open ? 'open' : ''
+  const openClass = props.faq.open ? 'open' : '';
 
   return (
     // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions

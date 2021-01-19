@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Header() {
   return (
@@ -6,6 +6,6 @@ function Header() {
       got a question?
     </header>
   );
-};
+}
 
 export default Header;

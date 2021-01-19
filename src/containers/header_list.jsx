@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+/* eslint-disable react/no-array-index-key */
+import React from 'react';
 import { connect } from 'react-redux';
 import Header from '../containers/header';
-import { getAllHeaders } from '../selectors'
+import { getAllHeaders } from '../selectors';
 
-const HeaderList = props => {
-
+const HeaderList = (props) => {
   const headers = props.headers.map((header, i) => <Header header={header} key={i} />);
 
   return (
@@ -14,7 +14,7 @@ const HeaderList = props => {
       </ul>
     </div>
   );
-}
+};
 
 function mapDispatchToProps(state) {
   return {

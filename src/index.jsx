@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 // external modules
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -18,7 +19,7 @@ const reducers = combineReducers({
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const middlewares =  composeEnhancers(applyMiddleware(logger));
+const middlewares = composeEnhancers(applyMiddleware(logger));
 
 // render an instance of the component in the DOM
 ReactDOM.render(
