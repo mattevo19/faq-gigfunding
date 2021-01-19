@@ -2,7 +2,7 @@ export default function(state = null, action) {
   switch (action.type) {
     case 'TOGGLE_FAQ':
       action.payload.open = !action.payload.open;
-      return action.payload;
+      return state;
     default:
       return state;
   }

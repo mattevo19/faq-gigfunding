@@ -8,6 +8,7 @@ const Faq = (props) => {
     props.toggleFaq(props.faq);
   };
   return (
+    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
     <li className={`question-list ${props.faq.open ? 'open' : ''}`} onClick={handleClick}>
       <div className="faq-question">
         {props.faq.question}
