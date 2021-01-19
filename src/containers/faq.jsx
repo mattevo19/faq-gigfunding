@@ -1,15 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import toggleFaq from '../actions/toggle_faq';
 
 const Faq = (props) => {
   const handleClick = () => {
     props.toggleFaq(props.faq);
   };
+
+  const openClass = props.faq.open ? 'open' : '';
+
   return (
     // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-    <li className={`question-list ${props.faq.open ? 'open' : ''}`} onClick={handleClick}>
+    <li className={`question-list ${openClass}`} onClick={handleClick}>
       <div className="faq-question">
         {props.faq.question}
       </div>
@@ -20,14 +22,4 @@ const Faq = (props) => {
   );
 };
 
-// function mapStateToProps(state) {
-//   return {
-//     toggleFaq: state.toggleFaq
-//   };
-// };
-
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ toggleFaq }, dispatch);
-}
-
-export default connect(null, mapDispatchToProps)(Faq);
+export default connect(null, { toggleFaq })(Faq);
