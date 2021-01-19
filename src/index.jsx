@@ -1,23 +1,25 @@
+/* eslint-disable no-underscore-dangle */
 // external modules
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { logger } from 'redux-logger';
 
 // internal modules
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
-import HeadersReducer from './reducers/headers_reducer';
-import activeHeaderReducer from './reducers/active_header_reducer';
+import headersReducer from './reducers/headers_reducer';
+import faqReducer from './reducers/faqs_reducer';
 
 // State and reducers
 const reducers = combineReducers({
-  headers: HeadersReducer,
-  activeHeader: activeHeaderReducer
+  selectedHeaders: headersReducer,
+  faqs: faqReducer
 });
 
-const middlewares = applyMiddleware(logger)
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const middlewares = composeEnhancers(applyMiddleware(logger));
 
 // render an instance of the component in the DOM
 ReactDOM.render(
