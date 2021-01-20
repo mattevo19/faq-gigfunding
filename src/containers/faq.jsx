@@ -15,6 +15,7 @@ const Faq = (props) => {
       <div className="faq-question">
         {props.faq.question}
       </div>
+
       <div className="faq-answer">
         {props.faq.answer}
       </div>

@@ -12,6 +12,7 @@ header {
   font-weight: 900;
   font-size: 48px;
   line-height: 50px;
+  margin: 100px 0;
 
   align-items: center;
   text-align: center;
@@ -22,6 +23,25 @@ header {
 footer {
   align-items: center;
   text-align: center;
+  margin-bottom: 370px;
+  h3 {
+    font-family: Neue Kabel;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  p {
+    font-family: Neue Kabel;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+  }
 }
 
 .headers {
@@ -30,12 +50,16 @@ footer {
   line-height: 50px;
   cursor: pointer;
 
-  margin: 0 20px 0 20px;
+
+  margin: 0 20px 130px 20px;
   justify-content: space-around;
   display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  li {
+    width: 250px;
+  }
 }
 
 li {
@@ -55,7 +79,7 @@ li {
   box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.104308);
   border-radius: 31.4815px;
   padding: 21px 41px;
-  margin: 38px 0 17px 0;
+  margin: 0 0 17px 0;
   width: 1149px;
   
   font-size: 24px;
@@ -67,7 +91,7 @@ li {
 
 .faq-question {
   position: relative;
-  padding-right: 20px;
+  padding: 10px 20px 10px 0;
 
   transition: all 0.4s ease;
 }
@@ -90,6 +114,12 @@ li {
 }
 
 .faq-answer {
+  font-family: Neue Kabel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 35px;
+  
   opacity: 0;
   max-height: 0;
   overflow-y: hidden;

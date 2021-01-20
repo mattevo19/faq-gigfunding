@@ -1,11 +1,11 @@
 module.exports = [
   {
     id: 1,
-    title: 'about funding',
+    title: "about gigfunding",
     faqs: [
       {
         question: "What is Gigfunding?",
-        answer: "Gigfunding is the change modern fundraising needs. Using our online marketplace, you can hire or volunteer skills depending on how you want to give; with the money paid for those skills going to the causes you want it to. Leaving behind passive direct debits, chugging and sponsored effing bungee jumps. Gigfunding allows you to fundraise when you want and how you want.",
+        answer: `Gigfunding is the change modern fundraising needs. Using our online marketplace, you can hire or volunteer skills depending on how you want to give; with the money paid for those skills going to the causes you want it to. Leaving behind passive direct debits, chugging and sponsored effing bungee jumps. Gigfunding allows you to fundraise when you want and how you want.`,
         open: false
       },
       {
@@ -60,7 +60,7 @@ module.exports = [
       },
       {
         question: "Will this take paid jobs away from small business owners?",
-        answer: "There could be some instances of this, but only a small percentage. The overall positive impact of the deed is the key aspect and fees won’t be undercutting market rates. We think that more skills will be hired because of the fundraising element, creating requests that would otherwise not have been hired at all Eg. Sarah wants her wall repainted, but can’t justify spending £100 to do it. However, now she knows about Gigfunding, she can feel content in spending the money, as she knows all the money is going to local causes she loves. The painter might only offer the job as a one off, for the year, but Sarah could hire them again, or recommend them to a friend external to Gigfunding, giving the painter a new paying client. We also feel many of the gigs will be tasks that would have normally been favours; eg. Watering your neighbor's plants, doing that job for a mate or walking your friend’s dog.",
+        answer: "There could be some instances of this, but only a small percentage. The overall positive impact of the deed is the key aspect and fees won’t be undercutting market rates. We think that more skills will be hired because of the fundraising element, creating requests that would otherwise not have been hired at all <em>Eg. Sarah wants her wall repainted,<em> but can’t justify spending £100 to do it. However, now she knows about Gigfunding, she can feel content in spending the money, as she knows all the money is going to local causes she loves. The painter might only offer the job as a one off, for the year, but Sarah could hire them again, or recommend them to a friend external to Gigfunding, giving the painter a new paying client. We also feel many of the gigs will be tasks that would have normally been favours; eg. Watering your neighbor's plants, doing that job for a mate or walking your friend’s dog.",
         open: false
       },
       {
