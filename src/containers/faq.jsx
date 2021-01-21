@@ -16,9 +16,10 @@ const Faq = (props) => {
         {props.faq.question}
       </div>
 
-      <div className="faq-answer">
-        {props.faq.answer}
-      </div>
+      <div
+        dangerouslySetInnerHTML={{ __html: props.faq.answer }}
+        className="faq-answer"
+      />
     </li>
   );
 };

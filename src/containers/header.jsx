@@ -7,8 +7,11 @@ const Header = (props) => {
     props.selectHeader(props.header);
   };
   return (
-    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-    <li onClick={handleClick}>{props.header}</li>
+    <li>
+      <div onClick={handleClick} role="presentation">
+        {props.header}
+      </div>
+    </li>
   );
 };
 

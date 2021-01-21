@@ -23,10 +23,8 @@ header {
 footer {
   align-items: center;
   text-align: center;
-  margin-bottom: 370px;
+  margin: 85px 0 370px 0;
   h3 {
-    font-family: Neue Kabel;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
@@ -36,11 +34,31 @@ footer {
     margin-bottom: 15px;
   }
   p {
-    font-family: Neue Kabel;
-    font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 36px;
+  }
+}
+
+.half-highlight-element {
+  
+  &:after {
+    content: '';
+    height: 0.65em;
+    width: 101.5%;
+    position: absolute;
+    left: -0.75%;
+    top: 33%;
+    z-index: -1;
+    border-radius: 4px;
+  }
+
+  &.offering:after {
+    background-color: blue;
+  }
+
+  &.requesting:after {
+    background-color: blue;
   }
 }
 
