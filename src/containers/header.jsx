@@ -6,10 +6,18 @@ const Header = (props) => {
   const handleClick = () => {
     props.selectHeader(props.header);
   };
+
+  const index = props.index;
+
   return (
     <li>
-      <div onClick={handleClick} role="presentation">
-        {props.header}
+      <div
+        onClick={handleClick}
+        role="presentation"
+      >
+        <span className={`half-highlight-element${index} offering`}>
+          {props.header}
+        </span>
       </div>
     </li>
   );

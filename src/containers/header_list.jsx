@@ -5,7 +5,7 @@ import Header from './header';
 import { getAllHeaders } from '../selectors';
 
 const HeaderList = (props) => {
-  const headers = props.headers.map((header, i) => <Header header={header} key={i} />);
+  const headers = props.headers.map((header, i) => <Header header={header} key={i} index={i} />);
 
   return (
     <div>

@@ -5,7 +5,7 @@ import Faq from '../containers/faq';
 import { getVisibleFaqs } from '../selectors';
 
 export const activeFaq = (props) => {
-  const visibleFaqs = props.faqs.map((faq, i) => <Faq faq={faq} key={i} />);
+  const visibleFaqs = props.faqs.map((faq, i) => <Faq faq={faq} key={i} index={i} />);
 
   return (
     <div className="active">
