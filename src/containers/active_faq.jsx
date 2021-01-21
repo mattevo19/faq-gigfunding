@@ -10,7 +10,7 @@ export const activeFaq = (props) => {
   return (
     <div className="active">
       <ul>
-        {visibleFaqs}
+        {visibleFaqs.slice(0, 10)}
       </ul>
     </div>
   );
